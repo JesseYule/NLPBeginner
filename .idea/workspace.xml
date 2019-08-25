@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4439d2f-e854-43cb-a156-da30bace5842" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2.advancedTextClassification/2.GloVe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.advancedTextClassification/3.textClassificationWithRNNAndGlove.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/textClassificationWithRNN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.simpliedTextClassification/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.simpliedTextClassification/classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/1.textClassificationWithRNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/2.advancedTextClassification/1.textClassificationWithRNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/eng-fra.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Arabic.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Chinese.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Czech.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Dutch.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/English.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/French.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/German.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Greek.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Irish.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Italian.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Japanese.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Korean.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Polish.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Portuguese.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Russian.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Scottish.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Spanish.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.advancedTextClassification/data/names/Vietnamese.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,18 +33,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NLPBeginner$classify.coverage" NAME="classify Coverage Results" MODIFIED="1566644496551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1.simpliedTextClassification" />
+    <SUITE FILE_PATH="coverage/NLPBeginner$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1566698023416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/anaconda3/lib/python3.7/site-packages/torch/nn/modules" />
     <SUITE FILE_PATH="coverage/NLPBeginner$textClassificationWithRNN.coverage" NAME="textClassificationWithRNN Coverage Results" MODIFIED="1566611691899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.advancedTextClassification" />
+    <SUITE FILE_PATH="coverage/NLPBeginner$3_textClassificationWithRNNAndGlove.coverage" NAME="3.textClassificationWithRNNAndGlove Coverage Results" MODIFIED="1566732824688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.advancedTextClassification" />
     <SUITE FILE_PATH="coverage/NLPBeginner$2_Glove.coverage" NAME="2.Glove Coverage Results" MODIFIED="1566643607026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.advancedTextClassification" />
+    <SUITE FILE_PATH="coverage/NLPBeginner$1_textClassificationWithRNN.coverage" NAME="1.textClassificationWithRNN Coverage Results" MODIFIED="1566730057183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.advancedTextClassification" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2.advancedTextClassification/3.textClassificationWithRNNAndGlove.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+              <folding>
+                <element signature="e#385#484#0" />
+                <element signature="e#360#382#0" />
+                <element signature="e#578#681#0" />
+                <element signature="e#1173#1456#0" />
+                <element signature="e#1455#1715#0" />
+                <element signature="e#1800#1850#0" />
+                <element signature="e#2321#2392#0" />
+                <element signature="e#3075#3185#0" />
+                <element signature="e#2059#3139#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2.advancedTextClassification/2.GloVe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="134">
+              <caret line="16" column="3" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="3" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2.advancedTextClassification/1.textClassificationWithRNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="207" column="10" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,9 +97,22 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
       <find>n_letters</find>
       <find>hidden</find>
+      <find>data</find>
+      <find>try</find>
+      <find>all_categories</find>
+      <find>category_lines</find>
+      <find>line_tensor</find>
+      <find>train</find>
+      <find>output</find>
+      <find>iter</find>
+      <find>guess_i</find>
+      <find>resultFromOutput</find>
+      <find>print</find>
+      <find>result</find>
+      <find>n_iters</find>
+      <find>criterion</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/2.advancedTextClassification/mycache</dir>
@@ -58,13 +127,16 @@
         <option value="$PROJECT_DIR$/2.advancedTextClassification/textClassificationWithRNN.py" />
         <option value="$PROJECT_DIR$/2.advancedTextClassification/2.Glove.py" />
         <option value="$PROJECT_DIR$/2.advancedTextClassification/2.GloVe.py" />
+        <option value="$PROJECT_DIR$/1.simpliedTextClassification/classify.py" />
+        <option value="$PROJECT_DIR$/2.advancedTextClassification/1.textClassificationWithRNN.py" />
+        <option value="$PROJECT_DIR$/2.advancedTextClassification/3.textClassificationWithRNNAndGlove.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="899" />
-    <option name="y" value="118" />
-    <option name="width" value="2285" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="260" />
+    <option name="y" value="98" />
+    <option name="width" value="1440" />
     <option name="height" value="808" />
   </component>
   <component name="ProjectView">
@@ -82,7 +154,17 @@
             <path>
               <item name="NLPBeginner" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLPBeginner" type="462c0819:PsiDirectoryNode" />
+              <item name="1.simpliedTextClassification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NLPBeginner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLPBeginner" type="462c0819:PsiDirectoryNode" />
               <item name="2.advancedTextClassification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NLPBeginner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLPBeginner" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -119,7 +201,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2.Glove">
+  <component name="RunManager" selected="Python.3.textClassificationWithRNNAndGlove">
+    <configuration name="1.textClassificationWithRNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NLPBeginner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.advancedTextClassification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.advancedTextClassification/1.textClassificationWithRNN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="2.Glove" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NLPBeginner" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,7 +246,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="textClassificationWithRNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="3.textClassificationWithRNNAndGlove" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NLPBeginner" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,7 +259,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.advancedTextClassification/textClassificationWithRNN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.advancedTextClassification/3.textClassificationWithRNNAndGlove.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NLPBeginner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="/anaconda3/lib/python3.7/site-packages/torch/nn/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="/anaconda3/lib/python3.7/site-packages/torch/nn/modules/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NLPBeginner" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1.simpliedTextClassification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.simpliedTextClassification/classify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,8 +314,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3.textClassificationWithRNNAndGlove" />
+        <item itemvalue="Python.1.textClassificationWithRNN" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.classify" />
         <item itemvalue="Python.2.Glove" />
-        <item itemvalue="Python.textClassificationWithRNN" />
       </list>
     </recent_temporary>
   </component>
@@ -183,24 +334,23 @@
       <updated>1566472351504</updated>
       <workItem from="1566472352872" duration="7479000" />
       <workItem from="1566563534024" duration="35000" />
-      <workItem from="1566608366408" duration="12562000" />
+      <workItem from="1566608366408" duration="58866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20076000" />
+    <option name="totallyTimeSpent" value="66380000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-142" y="62" width="2285" height="808" extended-state="0" />
-    <editor active="true" />
+    <frame x="-244" y="60" width="1440" height="808" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31074452" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21316166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35857144" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3992629" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -213,7 +363,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -244,12 +394,79 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/1.simpliedTextClassification/data/train.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1097" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2.advancedTextClassification/2.GloVe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="134">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="3" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.simpliedTextClassification/classify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.7/site-packages/torch/nn/modules/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.7/site-packages/torch/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="324" column="8" selection-start-line="324" selection-start-column="8" selection-end-line="324" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.advancedTextClassification/1.textClassificationWithRNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="207" column="10" selection-start-line="207" selection-start-column="10" selection-end-line="207" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.7/site-packages/torch/nn/modules/linear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-307">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.advancedTextClassification/3.textClassificationWithRNNAndGlove.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#385#484#0" />
+            <element signature="e#360#382#0" />
+            <element signature="e#578#681#0" />
+            <element signature="e#1173#1456#0" />
+            <element signature="e#1455#1715#0" />
+            <element signature="e#1800#1850#0" />
+            <element signature="e#2321#2392#0" />
+            <element signature="e#3075#3185#0" />
+            <element signature="e#2059#3139#0" />
           </folding>
         </state>
       </provider>

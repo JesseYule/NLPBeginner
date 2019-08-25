@@ -22,7 +22,6 @@ def findFiles(path):
 
 all_letters = string.ascii_letters + ".,;'"
 n_letters = len(all_letters)
-print('n_letters:', n_letters)
 
 
 # 将unicode转成ASCII
@@ -43,7 +42,7 @@ def readLines(filename):
     return [unicodeToAscii(line) for line in lines]
 
 
-for filename in findFiles('data/names/*.txt'):
+for filename in findFiles('../data/names/*.txt'):
     category = os.path.splitext(os.path.basename(filename))[0]
     all_categories.append(category)
     lines = readLines(filename)
@@ -107,10 +106,11 @@ rnn = RNN(n_letters, n_hidden, n_categories)
 
 
 input = lineToTensor('Hofler')
+
 hidden = torch.zeros(1, n_hidden)
-print('input[0]:', input[0])
+
 output, next_hidden = rnn(input[0], hidden)
-print(output)
+
 
 # 第三步，构建一些辅助函数辅助训练
 # 以下函数主要分析输出结果对应哪种语言（只输出可能性最大的结果）
@@ -130,6 +130,7 @@ def randomChoice(l):
 def randomTrainingExample():
     category = randomChoice(all_categories)  # 在所有种类中随机选择一种
     line = randomChoice(category_lines[category])  # 在选中的语言中再随机选一个名字
+
     category_tensor = torch.tensor([all_categories.index(category)], dtype=torch.long)  # 保存语种的index
     line_tensor = lineToTensor(line)  # 把名字转化为tensor
     return category, line, category_tensor, line_tensor
@@ -150,6 +151,9 @@ def train(category_tensor, line_tensor):
     # 对RNN来说，完整的一次训练是完整输入一个单词的所有字符的过程
     for i in range(line_tensor.size()[0]):
         output, hidden = rnn(line_tensor[i], hidden)
+
+
+
 
     loss = criterion(output, category_tensor)
     loss.backward()
@@ -189,6 +193,8 @@ for iter in range(1, n_iters + 1):
     # 打印迭代的编号，损失，名字和猜测
     if iter % print_every == 0:
         guess, guess_i = categoryFromOutput(output)
+        print('guess: ', guess)
+        print('category: ', category)
         correct = '✓' if guess == category else '✗ (%s)' % category
         print('%d  %d%% (%s) %.4f  %s / %s  %s' % (iter, iter / n_iters * 100, timeSince(start), loss, line, guess, correct))
 
@@ -199,3 +205,4 @@ for iter in range(1, n_iters + 1):
 
 plt.figure()
 plt.plot(all_losses)
+plt.show()

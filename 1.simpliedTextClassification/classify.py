@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def classify():
-	df = pd.read_csv('train.tsv', header=0, delimiter='\t')
+	df = pd.read_csv('../data/train.tsv', header=0, delimiter='\t')
 	df = df[0:63]  # 为了简化只取第一句话作为例子
 	x_train = df['Phrase']
 	y_train = df['Sentiment']
