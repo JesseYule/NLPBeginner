@@ -31,9 +31,9 @@
 
 ### 结果分析
 
-![result](/Users/junjieyu/Documents/programming/github_projects/NLPBeginner/2.advancedTextClassification/result/result.png)
+![result](result/result.png)
 
- ![plot](/Users/junjieyu/Documents/programming/github_projects/NLPBeginner/2.advancedTextClassification/result/plot.png)
+ ![plot](result/plot.png)
 
 ​	从结果可以看出，其实模型训练效果并不算好，主要原因有以下几点：
 
