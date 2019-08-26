@@ -43,9 +43,9 @@
 
 3. GloVe缺失部分词向量，对这些词向量模型里都以全0向量代替，对模型的结果也可能造成影响
 
-   第二次训练我才用了随机选取数据进行训练，效果马上就上来了：![plot2](/Users/junjieyu/Documents/programming/github_projects/NLPBeginner/2.advancedTextClassification/result/plot2.png)
+   第二次训练我才用了随机选取数据进行训练，效果马上就上来了：![plot2](result/plot2.png)
 
-   可是另一个问题又来了，模型的输出出现NAN，在网上搜索之后发现可能是梯度爆炸（消失？）造成的，于是把学习率降低，再学习一次：![plot3](/Users/junjieyu/Documents/programming/github_projects/NLPBeginner/2.advancedTextClassification/result/plot3.png)
+   可是另一个问题又来了，模型的输出出现NAN，在网上搜索之后发现可能是梯度爆炸（消失？）造成的，于是把学习率降低，再学习一次：![plot3](result/plot3.png)
 
    第三次的训练效果是比较满意的，也避免了梯度爆炸的问题。
 
