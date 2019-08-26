@@ -25,19 +25,28 @@
 
 ### 代码说明
 
-​	1.textClassificationWithRNN.py和2.GloVe.py是把RNN应用到文本分类以及GloVe的简单使用实例，基于这两个代码的基础上，把输入数据换成我们要分析的情感数据，就得到3.textClassificationWithRNNAndGlove.py。在改写的过程中，主要注意数据的格式，因为pytorch对输入数据的格式有很严格的要求（比如数据的维数），所以必须检查清楚避免出错，建议在理解第一第二个文件的代码的基础上，自行改写出第三个文件。
+​	1.textClassificationWithRNN.py是利用Pytorch在文本分类中应用RNN的简单例子，2.GloVe.py说明了如何使用GloVe的预训练词向量，3.textClassificationWithCNN.py则是使用Tensorflow将CNN应用到文本分类中。
+
+​	3.textClassificationWithRNNAndGlove.py主要基于1和2两段代码，利用GloVe对原始数据进行转换，在输入到RNN中进行分析。在改写的过程中，主要需要注意的是数据格式，因为pytorch对输入数据的格式有很严格的要求（比如数据的维数），所以必须检查清楚避免出错，建议在理解第一第二个文件的代码的基础上，自行改写出第三个文件。
 
 
 
 ### 结果分析
 
-![result](result/result.png)
-
  ![plot](result/plot.png)
 
-​	从结果可以看出，其实模型训练效果并不算好，主要原因有以下几点：
+​	这是第一次训练的结果，从结果可以看出，其实模型训练效果并不算好，主要原因有以下几点：
 
 1. 模型是按顺序训练数据，实际上应该进行随机抽取数据进行训练
+
 2. 模型只有一层隐层，这也可能导致模型训练效果欠缺
+
 3. GloVe缺失部分词向量，对这些词向量模型里都以全0向量代替，对模型的结果也可能造成影响
 
+   第二次训练我才用了随机选取数据进行训练，效果马上就上来了：![plot2](/Users/junjieyu/Documents/programming/github_projects/NLPBeginner/2.advancedTextClassification/result/plot2.png)
+
+   可是另一个问题又来了，模型的输出出现NAN，在网上搜索之后发现可能是梯度爆炸（消失？）造成的，于是把学习率降低，再学习一次：![plot3](/Users/junjieyu/Documents/programming/github_projects/NLPBeginner/2.advancedTextClassification/result/plot3.png)
+
+   第三次的训练效果是比较满意的，也避免了梯度爆炸的问题。
+
+​       基于上面的训练过程，可以看出随机训练模型对模型的学习非常重要。结合训练数据其实可以这样理解，我们按顺序训练数据，模型"学到"了这一批数据的规律，应用到下一批数据又不凑效了，所以模型的Loss没有明显的下降，但是随机学习数据的话，就避免了这个问题。从这个角度来说，所谓的学习对机器来说，或许本质上还是"记住"数据的潜在规律。

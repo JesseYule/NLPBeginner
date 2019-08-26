@@ -8,6 +8,7 @@ import math
 import matplotlib.pyplot as plt
 from gensim.models import KeyedVectors
 import numpy as np
+import random
 
 
 # 第一步，加载GloVe
@@ -147,7 +148,7 @@ if __name__ == '__main__':
     # 正式训练，注意，这里只是按顺序抽取数据进行训练
 
     criterion = nn.NLLLoss()
-    learning_rate = 0.005
+    learning_rate = 0.001
 
     # 跟踪绘图的损失
     print_every = 5000
@@ -155,22 +156,31 @@ if __name__ == '__main__':
 
     start = time.time()
 
-    for j in range(len(lines)-1):
+    iter_max = 100000
 
-        output, loss = trainModel(result[j], sentence[j])
+    for j in range(iter_max):
+
+        rand_j = random.randint(1, len(lines)-2)  # 随机训练
+
+        output, loss = trainModel(result[rand_j], sentence[rand_j])
         current_loss += loss
-
-        # 打印迭代的编号，损失，名字和猜测
-        if j % print_every == 0:
-            guess, guess_i = resultFromOutput(output)
-            check_guess = int(guess)
-            check_guess = check_guess * (-1)
-            check_result = int(result[j])
-            print('guess: ', check_guess)
-            print('result: ', check_result)
-            correct = '✓' if check_guess == check_result else '✗ (%s)' % check_result
-            print('%d   (%s) %.4f  %s / %s  %s' % (
-            j, timeSince(start), loss, sentence[j], check_guess, correct))
+        try:
+            # 打印迭代的编号，损失，名字和猜测
+            if j % print_every == 0:
+                guess, guess_i = resultFromOutput(output)
+                check_guess = int(guess)
+                check_guess = check_guess * (-1)
+                check_result = int(result[rand_j])
+                print('guess: ', check_guess)
+                print('result: ', check_result)
+                correct = '✓' if check_guess == check_result else '✗ (%s)' % check_result
+                print('%d   (%s) %.4f  %s / %s  %s' % (
+                j, timeSince(start), loss, sentence[rand_j], check_guess, correct))
+        except Exception as e:
+            print(e)
+            print('rand_j: ', rand_j)
+            print('output: ', output)
+            continue
 
         # 将当前损失平均值添加到损失列表中
         if j % plot_every == 0:
