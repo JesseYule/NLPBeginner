@@ -15,14 +15,15 @@
    * [词袋模型](https://jesseyule.github.io/naturallanguage/bow/content.html)
 
    * [logistic回归](https://jesseyule.github.io/machinelearning/logisticRegression/content.html)
-
 2. 基于深度学习的文本分类：
 
    * [卷积神经网络](<https://jesseyule.github.io/machinelearning/cnn/content.html>)
-
    * [循环神经网络](<https://jesseyule.github.io/machinelearning/rnn/content.html>)
-
    * [word2vec](<https://jesseyule.github.io/naturallanguage/word2vec/content.html>)
-
    * [GloVe](<https://jesseyule.github.io/naturallanguage/gloVe/content.html>)
+3. 基于注意力机制的文本匹配
+   * [LSTM](<https://jesseyule.github.io/machinelearning/lstm/content.html>)
+   * [seq2seq](<https://jesseyule.github.io/naturallanguage/seq2seq/content.html>)
+   * [注意力机制](<https://jesseyule.github.io/naturallanguage/attentionMechanism/content.html>)
+   * [ESIM](<https://jesseyule.github.io/naturallanguage/ESIM/content.html>)
 
