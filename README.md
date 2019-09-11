@@ -26,4 +26,9 @@
    * [seq2seq](<https://jesseyule.github.io/naturallanguage/seq2seq/content.html>)
    * [注意力机制](<https://jesseyule.github.io/naturallanguage/attentionMechanism/content.html>)
    * [ESIM](<https://jesseyule.github.io/naturallanguage/ESIM/content.html>)
+4. 基于LSTM+CRF的命名实体识别
+   - [概率图模型](<<https://jesseyule.github.io/naturallanguage/probabilistifcGraphicalModel/content.html>>)
+   - [隐马尔可夫模型](<https://jesseyule.github.io/naturallanguage/hmm/content.html>)
+   - [Viterbi算法](<https://jesseyule.github.io/naturallanguage/viterbi/content.html>)
+   - [条件随机场](<https://jesseyule.github.io/naturallanguage/crf/content.html>)
 
