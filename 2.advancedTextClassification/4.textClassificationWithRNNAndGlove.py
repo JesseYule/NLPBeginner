@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
     # 读取数据以及进行预处理
 
-    lines = readLines('../data/train.tsv')
+    lines = readLines('data/train.tsv')
     sentence = []
     result = []
     for i in range(len(lines)-1):

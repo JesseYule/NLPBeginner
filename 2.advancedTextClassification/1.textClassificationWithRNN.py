@@ -42,7 +42,7 @@ def readLines(filename):
     return [unicodeToAscii(line) for line in lines]
 
 
-for filename in findFiles('../data/names/*.txt'):
+for filename in findFiles('data/names/*.txt'):
     category = os.path.splitext(os.path.basename(filename))[0]
     all_categories.append(category)
     lines = readLines(filename)
@@ -124,7 +124,7 @@ def categoryFromOutput(output):
 
 # 以下函数是关于随机选择训练样本
 def randomChoice(l):
-    return l[random.randint(0, len(l) - 1)]
+    return l[random.randint(0, len(l)-1)]
 
 
 def randomTrainingExample():
@@ -151,8 +151,6 @@ def train(category_tensor, line_tensor):
     # 对RNN来说，完整的一次训练是完整输入一个单词的所有字符的过程
     for i in range(line_tensor.size()[0]):
         output, hidden = rnn(line_tensor[i], hidden)
-
-
 
 
     loss = criterion(output, category_tensor)

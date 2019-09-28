@@ -12,7 +12,7 @@ from six.moves.urllib.request import urlretrieve
 import tensorflow as tf
 
 url = 'http://cogcomp.org/Data/QA/QC/'
-dir_name = '../data/question-classif-data'
+dir_name = 'data/question-classif-data'
 
 
 #  下载数据
