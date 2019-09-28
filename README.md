@@ -36,3 +36,8 @@
    * [self attention](<https://jesseyule.github.io/naturallanguage/selfAttention/content.html>)
    * [transformer](<https://jesseyule.github.io/naturallanguage/transformer/content.html>)
 
+
+
+最后放一张自然语言领域目前的学习路线图，当然其实每年都有很多新技术新模型出现，知识永远都是学不完的，祝愿各位、也希望自己能保持热爱，在这个领域能做出一点贡献。
+
+![IMG_0611](./IMG_0611.PNG)
